@@ -1,0 +1,6 @@
+Horas Daniel
+Android package: com.danielveiga.horas
+Version: 1.0.0
+Target SDK: 35
+Min SDK: 23
+Build: assembleRelease
