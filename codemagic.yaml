@@ -1,0 +1,20 @@
+workflows:
+  android-test:
+    name: Horas Daniel - APK de Teste
+    max_build_duration: 30
+    environment:
+      vars:
+        PACKAGE_NAME: com.danielveiga.horas
+    scripts:
+      - name: Verificar projeto
+        script: |
+          echo "Projeto Horas Daniel"
+          pwd
+          ls -la
+          ls -la app
+      - name: Compilar APK de teste
+        script: |
+          gradle --version
+          gradle assembleDebug --stacktrace
+    artifacts:
+      - app/build/outputs/apk/debug/app-debug.apk
